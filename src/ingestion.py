@@ -13,7 +13,7 @@ pc = Pinecone(api_key=PINECONE_API_KEY)
 INDEX_NAME = 'fintech-ai-assistant'
 
 # Load + Process Docs
-extracted_data = load_pdf(r"C:\Users\palla\OneDrive\Desktop\fintech\ft-Chatbot\Data")
+extracted_data = load_pdf("fintech/ft-Chatbot/Data")
 clean_data = filter_text(extracted_data)
 chunks = text_to_chunks(clean_data)
 
