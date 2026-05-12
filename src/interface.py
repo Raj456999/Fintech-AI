@@ -17,7 +17,7 @@ def get_base64_image(image_path):
     return encoded
 
 # LOAD IMAGE
-bg_image = get_base64_image("fintech.jpg")
+bg_image = get_base64_image("Fintech-AI/src/fintech.jpg")
 
 # =========================================================
 # PAGE CONFIG
