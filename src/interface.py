@@ -1,15 +1,19 @@
 import streamlit as st
 from rag_pipeline import get_answer
 import base64
+import os
 
 # =========================================================
 # LOAD BACKGROUND IMAGE
 # =========================================================
 
-def get_base64_image(image_path):
+# FUNCTION TO LOAD IMAGE
+def get_base64_image(image_name):
+
+    current_dir = os.path.dirname(__file__)
+    image_path = os.path.join(current_dir, image_name)
 
     with open(image_path, "rb") as img_file:
-
         encoded = base64.b64encode(
             img_file.read()
         ).decode()
@@ -17,7 +21,7 @@ def get_base64_image(image_path):
     return encoded
 
 # LOAD IMAGE
-bg_image = get_base64_image("Fintech-AI/src/fintech.jpg")
+bg_image = get_base64_image("fintech.jpg")
 
 # =========================================================
 # PAGE CONFIG
