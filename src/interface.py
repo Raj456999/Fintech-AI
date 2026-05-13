@@ -185,7 +185,7 @@ st.sidebar.write("• FinTech Knowledge Base")
 st.sidebar.write("### ⚙ Built With")
 
 st.sidebar.write("• LangChain")
-st.sidebar.write("• FAISS / Pinecone")
+st.sidebar.write("• Pinecone")
 st.sidebar.write("• Groq LLM")
 st.sidebar.write("• Streamlit")
 
